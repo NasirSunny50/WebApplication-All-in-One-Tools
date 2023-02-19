@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Text Comparison Tool</title>
+    <link rel="stylesheet" href="compare.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Text Comparison Tool</h1>
+    </header>
+    <main>
+      <section>
+        <h2>Enter Original Text:</h2>
+        <textarea id="text1"></textarea>
+      </section>
+      <section>
+        <h2>Enter Changed Text:</h2>
+        <textarea id="text2"></textarea>
+      </section>
+      <button onclick="compareTexts()">Compare Texts</button>
+      <div id="result-section">
+        <div class="column" id="text1-section"></div>
+        <div class="column" id="text2-section"></div>
+      </div>
+          
+    </main>
+    <script src="compare.js"></script>
+  </body>
+</html>
