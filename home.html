@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Tools</title>
+  <style>
+    .container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      background-color: lightblue;
+    }
+    .btn {
+  width: 200px;
+  height: 50px;
+  padding: 10px 20px;
+  border: 1px solid black;
+  border-radius: 5px;
+  text-decoration: none;
+  color: black;
+  margin: 20px;
+  background-color: lightyellow;
+  box-shadow: 2px 2px 5px grey;
+  font-size: 20px;
+  font-weight: bold;
+  transition: all 0.3s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+    .btn:hover {
+      transform: translateY(-5px);
+      box-shadow: 2px 7px 5px grey;
+    }
+    .btn{
+      text-align: center;
+    }
+    h1 {
+      color: black;
+      margin-bottom: 50px;
+      animation: anim-title 1s ease-in-out;
+      font-size: 40px;
+      text-align: center;
+    }
+
+    @keyframes anim-title {
+    from {
+      transform: translateY(-100%);
+      opacity: 0;
+    }
+    to {
+      transform: translateY(0);
+      opacity: 1;
+    }
+}
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Welcome to the Tools Page</h1>
+    <a href="Word_count/w_count.html" class="btn">Word Count</a>
+    <a href="Letter_Count/L_count.html" class="btn">Letter Count</a>
+    <a href="Weight_Conversion/weight.html" class="btn">Weight Converter</a>
+    <a href="Temperature_Conversion/temp.html" class="btn">Temperature Converter</a>
+  </div>
+  <script>
+    const btns = document.querySelectorAll(".btn");
+    btns.forEach(function(btn) {
+      btn.addEventListener("mouseenter", function(event) {
+        event.target.style.backgroundColor = "lightgreen";
+      });
+      btn.addEventListener("mouseleave", function(event) {
+        event.target.style.backgroundColor = "lightyellow";
+      });
+    });
+  </script>
+</body>
+</html>

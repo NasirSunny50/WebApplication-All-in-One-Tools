@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Weight Converter</title>
+    <link rel="stylesheet" type="text/css" href="weight.css">
+  </head>
+  <body>
+    <h1>Weight Converter</h1>
+    <form>
+      <input type="text" id="inputValue">
+      <select id="inputUnit">
+        <option value="kilograms">Kilograms</option>
+        <option value="grams">Grams</option>
+        <option value="pounds">Pounds</option>
+        <option value="miligrams">Miligrams</option>
+        <option value="micrograms">Micrograms</option>
+        <option value="tonnes">Tonnes</option>
+        <option value="ounces">Ounces</option>
+      </select>
+      <input type="button" value="Convert" onclick="convert()">
+      <br><br>
+      <select id="outputUnit">
+        <option value="kilograms">Kilograms</option>
+        <option value="grams">Grams</option>
+        <option value="pounds">Pounds</option>
+        <option value="miligrams">Miligrams</option>
+        <option value="micrograms">Micrograms</option>
+        <option value="tonnes">Tonnes</option>
+        <option value="ounces">Ounces</option>
+      </select>
+    </form>
+    <p id="output">Result: <span id="result"></span></p>
+    <br>
+    <p id="output"></p>
+    <input type="button" value="Reset" onclick="resetValues()">
+    <script type="text/javascript" src="weight.js"></script>
+  </body>
+</html>
